@@ -1,0 +1,29 @@
+streamlit
+python-dotenv
+langchain
+langchain-core
+langchain-text-splitters
+langchain-community==0.4.1
+langchain-mistralai
+langchain-classic
+chromadb
+pypdf
+
+# Hybrid retrieval (BM25 keyword search)
+rank_bm25
+
+# Cross-encoder reranking (CPU-only torch to keep image size down —
+# the default torch install pulls CUDA support that isn't needed here)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+sentence-transformers
+tokenizers==0.22.2
+
+# Evaluation
+ragas
+datasets
+
+# API service
+fastapi
+uvicorn[standard]
+python-multipart

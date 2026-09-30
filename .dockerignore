@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+chroma_db/
+bm25_store/
+uploaded_documents/
+.git/
+*.md
+document_loaders/

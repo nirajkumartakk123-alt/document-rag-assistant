@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.local
+
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated indexes (rebuilt by create_database.py)
+chroma_db/
+bm25_store/
+
+# User-uploaded documents (add a public sample separately if you want one)
+uploaded_documents/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
