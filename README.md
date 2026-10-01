@@ -143,6 +143,22 @@ Run `python eval.py` to reproduce these results.
 
 ---
 
+## Usage
+
+There is no pre-build step. Documents are ingested at runtime.
+
+**Streamlit app:** run `streamlit run app.py`, upload one or more PDFs
+in the UI, then ask questions.
+
+**API:** start the server (`uvicorn api:app --reload`), then:
+1. `POST /documents/process` with your PDF files (multipart field `files`)
+2. `POST /ask` with your question
+Interactive docs: http://127.0.0.1:8000/docs
+
+The index is stored in `chroma_db/` (vectors) and `bm25_store/chunks.pkl`
+(BM25 chunks). Both are created automatically and are gitignored.
+In Docker, the mounted volumes keep the index between restarts.
+
 ## Running locally
 
 ```bash
