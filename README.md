@@ -188,3 +188,8 @@ docker run -p 8000:8000 --env-file .env \
 ├── Dockerfile
 └── eval_results.csv           # Latest evaluation run output
 ```
+
+## Setup
+1. Copy `.env.example` to `.env`
+2. Add your `MISTRAL_API_KEY` (used for the LLM and embeddings)
+Note: Mistral's free tier is rate-limited. If you hit limits during evaluation, use a paid API key.

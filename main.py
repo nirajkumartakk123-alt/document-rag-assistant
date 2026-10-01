@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from langchain_openai import OpenAIEmbeddings
 from langchain_mistralai import MistralAIEmbeddings
 from langchain_mistralai import ChatMistralAI
 from langchain_community.vectorstores import Chroma
